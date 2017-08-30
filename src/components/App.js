@@ -13,7 +13,7 @@ class App extends Component {
         return (
             <section className={cx('app')}>
                 <Switch>
-                    <Route path="/" component={authorization(false)(LoginPage)} exact/>
+                    <Route path="/" component={authorization(truegit)(IndexPage)} exact/>
                     <Route path="/login" component={LoginPage}/>
                 </Switch>
             </section>
