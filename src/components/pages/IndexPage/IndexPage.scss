@@ -1,0 +1,209 @@
+@import 'utils';
+
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.index-page {
+  .column {
+    width: 100%;
+    max-width: 1100px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: row;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    justify-content: left;
+    margin: 0 auto;
+    padding: 20px;
+
+  }
+  .header {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    -webkit-box-pack: center;
+    justify-content: center;
+    margin: 0 auto;
+    .title {
+      line-height: 1.4;
+      color: #fff;
+      font-size: 80px;
+      font-weight: 100;
+      text-shadow: 0px 0px 5px rgba(0,0,0,.4);
+      a {
+        color: #fff;
+        text-decoration: none;
+      }
+    }
+    .sub-title {
+      line-height: 1;
+      color: #eee;
+      font-weight: 300;
+      font-size: 20px;
+      text-shadow: 0px 0px 5px rgba(0,0,0,.4);
+    }
+    .btn-go-blog {
+      width: 150px;
+      border: 2px solid #fff;
+      padding: 0 20px;
+      line-height: 50px;
+      font-size: 15px;
+      color: #fff;
+      text-shadow: 0px 0px 5px rgba(0,0,0,.4);
+      drop-shadow: 0px 0px 5px rgba(0,0,0,.4);
+      font-weight: 300;
+      margin-top: 40px;
+      text-decoration: none;
+      transition-duration: 600ms;
+      position: relative;
+      &:hover {
+        background-color: rgba(255,255,255,0.3);
+
+      }
+      span {
+        position: absolute;
+        right: 20px;
+      }
+    }
+
+  }
+  .profile {
+    width: 100%;
+    max-width: 320px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    justify-content: center;
+    .image {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      overflow: hidden;
+      position: relative;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      flex-direction: column;
+      -webkit-box-flex: 1;
+      flex-grow: 1;
+      -webkit-box-pack: center;
+      justify-content: center;
+      margin: 0 auto;
+      drop-shadow: 0px 0px 5px rgba(0,0,0,.4);
+      img {
+        display: flex;
+        width: 100%;
+        height: auto;
+      }
+    }
+    .name, .name-eng, .row-introduce {
+      text-align: center;
+      font-size: 15px;
+      color: #fff;
+      font-weight: 100;
+      text-shadow: 0px 0px 5px rgba(0,0,0,.4);
+
+    }
+    .name {
+      font-size: 30px;
+      margin-top: 10px;
+    }
+    .row-introduce {
+      margin-top: 5px;
+    }
+    .social {
+      margin-top: 10px;
+      justify-content: center;
+      display: flex;
+      li {
+        margin: 0 5px;
+        display: flex;
+      }
+      i {
+        /* use !important to prevent issues with browser extensions that change fonts */
+        font-family: 'Socicon' !important;
+        speak: none;
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        text-transform: none;
+        line-height: 1;
+        /* Better Font Rendering =========== */
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+      a {
+        display: block;
+        width: 30px;
+        height: 30px;
+        background-color: #fff;
+        border-radius: 50%;
+        text-align:center;
+        text-decoration: none;
+      }
+      i:before {
+        line-height: 30px;
+        font-size: 14px;
+
+      }
+      .github:before {
+        content: "\e032";
+      }
+      .facebook:before {
+        content: "\e028";
+      }
+      .instagram:before {
+        content: "\e044";
+      }
+    }
+    .introduce {
+      margin-top : 20px;
+      .title {
+        font-weight: 300;
+        font-size: 15px;
+        color: #fff;
+        text-align: center;
+        margin-bottom: 5px;
+        text-shadow: 0px 0px 5px rgba(0, 0, 0, .4);
+      }
+      .contents {
+        padding: 10px;
+        border: 1px solid #fff;
+        .list {
+          justify-content: center;
+          display: flex;
+          color: #fff;
+          li {
+            width: 70px;
+            height: 60px;
+            text-align: center;
+            border-radius: 50%;
+            padding-top: 10px;
+            text-shadow: 0px 0px 5px rgba(0, 0, 0, .4);
+            transition-duration: 600ms;
+            i {
+              width: 100%;
+              font-size: 30px;
+              margin: 0 10px;
+            }
+            p {
+              text-align: center;
+            }
+          }
+          li:hover {
+            background-color: #fff;
+            text-shadow: 0px 0px 5px rgba(255, 255, 255, .4);
+            color: #333;
+            i {
+            }
+
+          }
+        }
+      }
+    }
+  }
+}
+

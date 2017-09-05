@@ -1,0 +1,7 @@
+@import 'utils';
+
+.logo {
+  span {
+    animation: visual-letter-typing 600ms linear infinite alternate;
+  }
+}
